@@ -1,8 +1,8 @@
 # Countdown 2
 
 - [Countdown 2](#countdown-2)
-  - [プロダクトの紹介](#プロダクトの紹介)
   - [<br>](#)
+  - [プロダクトの紹介](#プロダクトの紹介)
   - [こだわった](#こだわった)
   - [くるしい](#くるしい)
     - [Number.isNaN](#numberisnan)
@@ -11,12 +11,12 @@
     - [変数の宣言](#変数の宣言)
   - [勉強になりました](#勉強になりました)
     - [アラートのアレンジ](#アラートのアレンジ)
-    - [グラフ（Chart.js）](#グラフchartjs)
-    - [モーダル](#モーダル)
   - [<br>](#-1)
   - [感想](#感想)
 
 <br>
+---
+
 
 ## プロダクトの紹介
 
@@ -35,16 +35,16 @@
 <br>
 👇
 <br>
-残りの人生を計算。
 残りの時間をカウントダウンする
 
 <br>
+
 ---
 
 ## こだわった
 <br>
-近未来っぽくした
-数字を強調させた
+黒白でシンプルにした。<br>
+真に迫る、すこし怖い感じにした
 
 
 ---
@@ -69,13 +69,15 @@ https://qiita.com/DecoratedKnight/items/b368bc774d7d7ec0c888
 ### タイムスコープ
 
 
-最初に日本で設定したら、日本時間で計算する。
-おそらく´.format´するとイギリス時間になってしまう。
+最初に日本で設定したら、日本時間で計算する。
+途中で<br>
+.format´すると違うタイムスコープになってしまう。
 
 https://www.wakuwakubank.com/posts/743-javascript-dayjs/#%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88br-format
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date
 
 <br>
+
 ### 変数の宣言
 
 変数の呼出しが難しかった。
@@ -85,18 +87,19 @@ https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Da
 どれが上手くいくか試すようにする。
 
 
-変数宣言を先にしたら動いた
+変数宣言を先にしたら動いた<br>
 
 小さい世界で作ったら
-変数は小さい世界でのみ生きる。
+変数は小さい世界でのみ使える。<br>
 
 まだイマイチわからない。
-少しづつ的確にあたりを仕留められるようにしたい。
+少しづつ的確にあたりを仕留められるようにしたい。<br>
 
 
 https://www.codegrid.net/articles/2017-js-scope-1/
 
 https://codezine.jp/article/detail/11353
+
 ## 勉強になりました
 <br>
 
@@ -104,25 +107,18 @@ https://codezine.jp/article/detail/11353
 https://on-ze.com/archives/1757
 
 <br>
-
-### グラフ（Chart.js）
-https://qiita.com/Haruka-Ogawa/items/59facd24f2a8bdb6d369#3-3-%E5%86%86%E3%82%B0%E3%83%A9%E3%83%95
-<br>
-
-### モーダル
-https://tech-dig.jp/js-modal/
-<br>
 ---
 
 ## 感想
 
-変数宣言で長い時間苦しんだ。
-let remain;
-一行書くだけで動いたのが面白いと思った。
+変数宣言で長い時間苦しんだ。<br>
+<br>
+let remain;<br>
+一行書くだけで重い道理に動いたのがおもしろい、粘ってよかった。<br>
+<br>
+slackで質問したら解決した。<br>
+（ありがとうございました！）<br>
+とても助かった。<br>
 
-slackで質問したら解決した。
-（ありがとうございました！）
-とても助かった。
-
-上手く質問するのは難しいと思った。。
+上手く質問するのは難しいと思った。<br>
 質問力を向上させたい。

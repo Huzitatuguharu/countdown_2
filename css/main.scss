@@ -51,7 +51,9 @@ select {
   font: inherit
 }
 
-
+a {
+  color: #fff;
+}
 
 button,
 input[type="submit"] {
@@ -81,15 +83,36 @@ input[type="submit"] {
 
 // フォント
 body {
-  font-family: 'DotGothic16',
-    sans-serif;
+  background-color: #000111;
   text-align: center;
   font-size: 18px;
-  letter-spacing:0.2em;
-
+  letter-spacing: 0.2em;
+  color: #fff;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+.header {
+  background-image: url(/img/ヘッダー.svg);
+  width: 150px;
+  height: 150px;
+  letter-spacing: 0.25em;
+  margin: 24px;
+}
 
+h1 {
+  margin: 32PX 0 64PX ;
+  border-bottom: solid 3px gray;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px white;
+    bottom: -3px;
+    width: 30%;
+  }
+}
 
 .wrap {
   display: flex;
@@ -105,25 +128,11 @@ form {
   flex-direction: column;
 }
 
-h1 {
-  border-bottom: solid 3px #00BBD4;
-  position: relative;
-  margin: 36PX;
-
-  &:after {
-    position: absolute;
-    content: " ";
-    display: block;
-    border-bottom: solid 3px #D41577;
-    bottom: -3px;
-    width: 30%;
-  }
-}
 
 .selectitem_content {
   border-radius: 3px;
-  margin: 16px;
-    cursor: pointer;
+  margin: 24px;
+  cursor: pointer;
 }
 
 
@@ -135,46 +144,55 @@ button {
   text-decoration: none;
   color: #FFF;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.73);
-  padding: 0.8em 1.1em;
-  background: #00bcd4;
-  border-top: solid 3px #00a3d4;
-  border-bottom: solid 3px #00a3d4;
+  padding: 0.5em 0.8em;
+  background: #fff;
+  border-top: solid 3px #e2e2e2;
+  border-bottom: solid 3px #e2e2e2;
   transition: .4s;
   cursor: pointer;
   border-radius: 5px;
-  letter-spacing:0.2em;
+  letter-spacing: 0.2em;
 
 
 
   &:hover {
-    text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
-      6px 0px 15px rgba(255, 255, 240, 0.83);
+    text-shadow: -6px 0px 15px rgba(88, 88, 88, 0.83),
+      6px 0px 15px rgba(68, 68, 68, 0.83);
   }
 }
 
 #second,
-#answer{
+#answer {
   margin: 32px;
-  letter-spacing:0.25em;
+  letter-spacing: 0.25em;
 }
 
 #life_hour,
-#life_year{
+#life_year {
   font-size: 48px;
-  color: #00a3d4;
+  letter-spacing: 0.25em;
 }
 
 
-.kourousyou{
+.kourousyou {
   margin: 64px;
 }
 
-.kourousyou p{
+.kourousyou p {
   font-size: 16px;
   margin: 16px;
 }
 
-footer img{
+footer img {
   width: 180px;
   height: 180px;
+}
+
+#label {
+  margin: 16px;
+}
+
+.fa-play,
+.fa-redo-alt {
+  color: #111;
 }
