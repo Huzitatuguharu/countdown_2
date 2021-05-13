@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>たつおさん</title>
+  <link rel="icon" type="image/x-icon" href="img/アイコン.svg">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <!-- アイコン -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="wrap">
+    <h1 class="main">
+
+      あなたの余命</h1>
+    <form>
+      <div class="selectitem">
+        <P for="gender">性別</P>
+        <select class="selectitem_content" id="gender"></select>
+      </div>
+      <div class="selectitem">
+        <P for="age">年齢</P>
+        <select class="selectitem_content" id="age"></select>
+      </div>
+      <section class="answer">
+        <div id="answer"></div>
+        <div id="second"></div>
+        <div id="label"></div>
+
+        <div id="nokori"></div>
+      </section>
+
+      <div class="selectitem">
+        <button type="submit" id="btn1"><i class="fas fa-play"></i></button>
+        <button type="submit" id="btn2"><i class="fas fa-redo-alt"></i></button>
+
+      </div>
+    </form>
+
+
+    <section class="kourousyou">
+      <details>
+        <summary>平均余命とは</summary>
+        <p>ある年齢の人があと<strong>何年生きられるか</strong>いう期待値です</p>
+        <p><a href="https://www.mhlw.go.jp/toukei/saikin/hw/life/life19/index.html" rel="noopener noreferrer"
+            target="_blank"> 厚生労働省のサイト</a>
+          で知ることができます</p>
+        <p>0歳の人の平均余命を平均寿命といいます</p>
+      </details>
+    </section>
+<!--
+    <footer>
+      <img src="img/return.svg" alt="">
+    </footer> -->
+  </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- 時間計算 -->
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script>
+    dayjs().format()
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <!-- popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
